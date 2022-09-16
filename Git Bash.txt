@@ -1,0 +1,217 @@
+ yecqc@IamHere MINGW64 /d/Class_61_Project
+$ git config --global user.name "dtspsv"
+
+yecqc@IamHere MINGW64 /d/Class_61_Project
+$ git config --global user.email "yecqchina@gmail.com"
+
+yecqc@IamHere MINGW64 /d/Class_61_Project
+$ git clone git@gitlab.com:f4513/class61/c61-lulu-ecommerce.git
+Cloning into 'c61-lulu-ecommerce'...
+remote: Enumerating objects: 695, done.
+remote: Counting objects: 100% (539/539), done.
+remote: Compressing objects: 100% (484/484), done.
+remote: Total 695 (delta 167), reused 189 (delta 22), pack-reused 156
+Receiving objects: 100% (695/695), 1.64 MiB | 7.90 MiB/s, done.
+Resolving deltas: 100% (211/211), done.
+
+yecqc@IamHere MINGW64 /d/Class_61_Project
+$ git branch -a
+fatal: not a git repository (or any of the parent directories): .git
+
+yecqc@IamHere MINGW64 /d/Class_61_Project
+$ cd c61-lulu-ecommerce/
+
+yecqc@IamHere MINGW64 /d/Class_61_Project/c61-lulu-ecommerce (main)
+$ git branch -a
+* main
+  remotes/origin/Eason-Lei
+  remotes/origin/Fang
+  remotes/origin/HEAD -> origin/main
+  remotes/origin/Xinhan
+  remotes/origin/group1
+  remotes/origin/group1-Footer-v0.1
+  remotes/origin/group1-NavBar-v0.1
+  remotes/origin/group1-axios-v0.1
+  remotes/origin/group1-filter-v0.1
+  remotes/origin/group1-filter-v0.1.1-notes
+  remotes/origin/group1-gallery-v0.1
+  remotes/origin/group1-products-v0.1
+  remotes/origin/junkaicao
+  remotes/origin/luluapple
+  remotes/origin/luluapple-card-1
+  remotes/origin/main
+  remotes/origin/offerget
+  remotes/origin/offerget-Jack
+  remotes/origin/offerget-Kaiwen
+  remotes/origin/offerget_Jessica
+  remotes/origin/rita-weng
+
+yecqc@IamHere MINGW64 /d/Class_61_Project/c61-lulu-ecommerce (main)
+$ git checkout -b offerget-Anthony
+Switched to a new branch 'offerget-Anthony'
+
+yecqc@IamHere MINGW64 /d/Class_61_Project/c61-lulu-ecommerce (offerget-Anthony)
+$ git branch -a
+  main
+* offerget-Anthony
+  remotes/origin/Eason-Lei
+  remotes/origin/Fang
+  remotes/origin/HEAD -> origin/main
+  remotes/origin/Xinhan
+  remotes/origin/group1
+  remotes/origin/group1-Footer-v0.1
+  remotes/origin/group1-NavBar-v0.1
+  remotes/origin/group1-axios-v0.1
+  remotes/origin/group1-filter-v0.1
+  remotes/origin/group1-filter-v0.1.1-notes
+  remotes/origin/group1-gallery-v0.1
+  remotes/origin/group1-products-v0.1
+  remotes/origin/junkaicao
+  remotes/origin/luluapple
+  remotes/origin/luluapple-card-1
+  remotes/origin/main
+  remotes/origin/offerget
+  remotes/origin/offerget-Jack
+  remotes/origin/offerget-Kaiwen
+  remotes/origin/offerget_Jessica
+  remotes/origin/rita-weng
+
+yecqc@IamHere MINGW64 /d/Class_61_Project/c61-lulu-ecommerce (offerget-Anthony)
+$ git pull origin offerget-Jack
+From gitlab.com:f4513/class61/c61-lulu-ecommerce
+ * branch            offerget-Jack -> FETCH_HEAD
+Updating 454fef3..86c1dfb
+Fast-forward
+ lululemon_project/package-lock.json              | 1329 +++++++++++++++++++++-
+ lululemon_project/package.json                   |   14 +
+ lululemon_project/src/App.css                    |   38 -
+ lululemon_project/src/App.js                     |   42 +-
+ lululemon_project/src/App.test.js                |    8 -
+ lululemon_project/src/Helper.js                  |  830 ++++++++++++++
+ lululemon_project/src/actions/index.js           |    5 +
+ lululemon_project/src/actions/productAction.js   |  124 ++
+ lululemon_project/src/components/Content.js      |   12 +
+ lululemon_project/src/components/ContentNav.js   |   92 ++
+ lululemon_project/src/components/Product.js      |   10 +
+ lululemon_project/src/components/ProductList.js  |   19 +
+ lululemon_project/src/index.css                  |   13 -
+ lululemon_project/src/index.js                   |   14 +-
+ lululemon_project/src/logo.svg                   |    1 -
+ lululemon_project/src/reducers/index.js          |    9 +
+ lululemon_project/src/reducers/productReducer.js |   31 +
+ lululemon_project/src/reportWebVitals.js         |   13 -
+ lululemon_project/src/setupTests.js              |    5 -
+ lululemon_project/src/store.js                   |    9 +
+ lululemon_project/src/styles/ContentNav.css      |  103 ++
+ lululemon_project/src/styles/ContentNav.css.map  |    1 +
+ lululemon_project/src/styles/ContentNav.scss     |  119 ++
+ lululemon_project/src/styles/index.css           |    5 +
+ lululemon_project/src/styles/index.css.map       |    1 +
+ lululemon_project/src/styles/index.scss          |    3 +
+ 26 files changed, 2737 insertions(+), 113 deletions(-)
+ delete mode 100644 lululemon_project/src/App.css
+ delete mode 100644 lululemon_project/src/App.test.js
+ create mode 100644 lululemon_project/src/Helper.js
+ create mode 100644 lululemon_project/src/actions/index.js
+ create mode 100644 lululemon_project/src/actions/productAction.js
+ create mode 100644 lululemon_project/src/components/Content.js
+ create mode 100644 lululemon_project/src/components/ContentNav.js
+ create mode 100644 lululemon_project/src/components/Product.js
+ create mode 100644 lululemon_project/src/components/ProductList.js
+ delete mode 100644 lululemon_project/src/index.css
+ delete mode 100644 lululemon_project/src/logo.svg
+ create mode 100644 lululemon_project/src/reducers/index.js
+ create mode 100644 lululemon_project/src/reducers/productReducer.js
+ delete mode 100644 lululemon_project/src/reportWebVitals.js
+ delete mode 100644 lululemon_project/src/setupTests.js
+ create mode 100644 lululemon_project/src/store.js
+ create mode 100644 lululemon_project/src/styles/ContentNav.css
+ create mode 100644 lululemon_project/src/styles/ContentNav.css.map
+ create mode 100644 lululemon_project/src/styles/ContentNav.scss
+ create mode 100644 lululemon_project/src/styles/index.css
+ create mode 100644 lululemon_project/src/styles/index.css.map
+ create mode 100644 lululemon_project/src/styles/index.scss
+
+yecqc@IamHere MINGW64 /d/Class_61_Project/c61-lulu-ecommerce (offerget-Anthony)
+$ git add .
+
+yecqc@IamHere MINGW64 /d/Class_61_Project/c61-lulu-ecommerce (offerget-Anthony)
+$ git commit -m
+error: switch `m' requires a value
+
+yecqc@IamHere MINGW64 /d/Class_61_Project/c61-lulu-ecommerce (offerget-Anthony)
+$ git commit -m "Add Footer.scss"
+[offerget-Anthony 93d6e0a] Add Footer.scss
+ 1 file changed, 4 insertions(+)
+ create mode 100644 lululemon_project/src/styles/Footer.scss
+
+yecqc@IamHere MINGW64 /d/Class_61_Project/c61-lulu-ecommerce (offerget-Anthony)
+$ git branch -a
+  main
+* offerget-Anthony
+  remotes/origin/Eason-Lei
+  remotes/origin/Fang
+  remotes/origin/HEAD -> origin/main
+  remotes/origin/Xinhan
+  remotes/origin/group1
+  remotes/origin/group1-Footer-v0.1
+  remotes/origin/group1-NavBar-v0.1
+  remotes/origin/group1-axios-v0.1
+  remotes/origin/group1-filter-v0.1
+  remotes/origin/group1-filter-v0.1.1-notes
+  remotes/origin/group1-gallery-v0.1
+  remotes/origin/group1-products-v0.1
+  remotes/origin/junkaicao
+  remotes/origin/luluapple
+  remotes/origin/luluapple-card-1
+  remotes/origin/main
+  remotes/origin/offerget
+  remotes/origin/offerget-Jack
+  remotes/origin/offerget-Kaiwen
+  remotes/origin/offerget_Jessica
+  remotes/origin/rita-weng
+
+yecqc@IamHere MINGW64 /d/Class_61_Project/c61-lulu-ecommerce (offerget-Anthony)
+$ git push -u origin offerget-Anthony
+Enumerating objects: 10, done.
+Counting objects: 100% (10/10), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (6/6), 469 bytes | 469.00 KiB/s, done.
+Total 6 (delta 3), reused 0 (delta 0), pack-reused 0
+remote:
+remote: To create a merge request for offerget-Anthony, visit:
+remote:   https://gitlab.com/f4513/class61/c61-lulu-ecommerce/-/merge_requests/new?merge_request%5Bsource_branch%5D=offerget-Anthony
+remote:
+To gitlab.com:f4513/class61/c61-lulu-ecommerce.git
+ * [new branch]      offerget-Anthony -> offerget-Anthony
+branch 'offerget-Anthony' set up to track 'origin/offerget-Anthony'.
+
+yecqc@IamHere MINGW64 /d/Class_61_Project/c61-lulu-ecommerce (offerget-Anthony)
+$ git branch -a
+  main
+* offerget-Anthony
+  remotes/origin/Eason-Lei
+  remotes/origin/Fang
+  remotes/origin/HEAD -> origin/main
+  remotes/origin/Xinhan
+  remotes/origin/group1
+  remotes/origin/group1-Footer-v0.1
+  remotes/origin/group1-NavBar-v0.1
+  remotes/origin/group1-axios-v0.1
+  remotes/origin/group1-filter-v0.1
+  remotes/origin/group1-filter-v0.1.1-notes
+  remotes/origin/group1-gallery-v0.1
+  remotes/origin/group1-products-v0.1
+  remotes/origin/junkaicao
+  remotes/origin/luluapple
+  remotes/origin/luluapple-card-1
+  remotes/origin/main
+  remotes/origin/offerget
+  remotes/origin/offerget-Anthony
+  remotes/origin/offerget-Jack
+  remotes/origin/offerget-Kaiwen
+  remotes/origin/offerget_Jessica
+
+yecqc@IamHere MINGW64 /d/Class_61_Project/c61-lulu-ecommerce (offerget-Anthony)
+$
